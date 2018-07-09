@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tfg.bangbangtan.restaurantapp">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="sensorLandscape">
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.DishTypeActivity"
+            android:label="Tipos de plato"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.DishSubtypeActivity"
+            android:label="Subtipos de plato"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Activities.DishesActivity"
+            android:label="Platos"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".Activities.DishDetailActivity"
+            android:label="Detalle de plato"
+            android:screenOrientation="sensorLandscape" />
+        <activity android:name=".Activities.OrderActivity"
+            android:screenOrientation="sensorLandscape" />
+    </application>
+
+</manifest>
